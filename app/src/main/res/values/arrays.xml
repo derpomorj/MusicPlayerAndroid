@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_types">
+        <item>"По названию"</item>
+        <item>"По исполнителю"</item>
+        <item>"По дате изменения"</item>
+    </string-array>
+</resources>

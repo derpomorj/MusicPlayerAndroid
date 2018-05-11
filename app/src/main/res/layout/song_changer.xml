@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/song_image"
+        android:layout_width="340dp"
+        android:layout_height="264dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/songpicture"
+        app:srcCompat="@drawable/standart_music"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="SONG NAME"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:text="Artist"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <SeekBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="0dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/prevButton"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:onClick="onPrevClicked"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:srcCompat="@drawable/ic_media_previous"
+            tools:layout_editor_absoluteY="391dp" />
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:onClick="onPlayClicked"
+            app:srcCompat="@drawable/med_play"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="391dp" />
+
+
+        <ImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:onClick="onNextClicked"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:srcCompat="@drawable/media_next"
+            tools:layout_editor_absoluteY="391dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
