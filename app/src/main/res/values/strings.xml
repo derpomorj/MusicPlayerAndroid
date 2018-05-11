@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Music Player 228</string>
+    <string name="app_name">Music Player</string>
     <string name="songpicture">SongPicture</string>
     <string name="shuffle">Shuffle</string>
     <string name="end">End</string>

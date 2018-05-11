@@ -51,7 +51,6 @@ public class SongAdapter extends BaseAdapter{
             viewHolder = new ViewHolder();
             viewHolder.songTitle = convertView.findViewById(R.id.song_title);
             viewHolder.artistName = convertView.findViewById(R.id.song_artist);
-            viewHolder.position = position;
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -61,6 +60,7 @@ public class SongAdapter extends BaseAdapter{
 
         viewHolder.songTitle.setText(currSong.getTitle());
         viewHolder.artistName.setText(currSong.getArtist());
+        viewHolder.position = position;
 
         return convertView;
     }
